@@ -7,4 +7,10 @@ class Sum extends Binary {
     public int evaluate() {
         return getLeft().evaluate() + getRight().evaluate();
     }
+
+
+    @Override
+    public String toString() {
+        return "(" + getLeft().toString() + " + " + getRight().toString() + ")";
+    }
 }
